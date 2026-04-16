@@ -22,43 +22,43 @@ const featuredProjects: Project[] = [
     title: "Pristine Gadgets",
     description:
       "A storefront-focused gadgets experience with category-led browsing, product callouts, and a clear retail layout built for fast scanning.",
-    tools: ["Next.js", "React", "Vercel", "E-commerce UI"],
+    tools: ["Next.js", "React", "TypeScript", "Vercel", "E-commerce UI"],
     highlights: ["Category filters", "Brand sections", "Promotional banners"],
     live: "https://gadgets-online-store.vercel.app/",
     image: "/project-shots/gadgets-online-store.png",
     accent: "indigo",
-    layout: "wide",
+    layout: "standard",
     source: "Live deployment",
   },
   {
     title: "Waypoint Travel Map",
     description:
       "A travel discovery interface centered on map-based exploration, place previews, and nearby highlights for planning visually.",
-    tools: ["Next.js", "React", "Vercel", "Map-based UX"],
+    tools: ["Next.js", "React", "TypeScript", "Vercel", "Map-based UX"],
     highlights: ["Interactive map", "Location search", "Destination cards"],
     live: "https://travel-map-app-ashen.vercel.app/",
     image: "/project-shots/travel-map-app.png",
     accent: "amber",
-    layout: "tall",
+    layout: "standard",
     source: "Live deployment",
   },
   {
     title: "OrbitHQ SaaS Dashboard",
     description:
       "A polished SaaS dashboard concept combining analytics, billing, support, and workflow surfaces inside one enterprise-style workspace.",
-    tools: ["Next.js", "React", "Dashboard UI", "Vercel"],
+    tools: ["Next.js", "React", "TypeScript", "Dashboard UI", "Vercel"],
     highlights: ["Executive analytics", "Role-aware views", "Automation panels"],
     live: "https://orbit-hq-saas-dashboard.vercel.app/",
     image: "/project-shots/orbit-hq-saas-dashboard.png",
     accent: "emerald",
-    layout: "wide",
+    layout: "standard",
     source: "Live deployment",
   },
   {
     title: "Food Recipe App",
     description:
       "A recipe search experience with a lightweight browsing flow and a clean food-first presentation designed around quick discovery.",
-    tools: ["React", "Vite", "API Search UI", "Responsive Design"],
+    tools: ["React", "TypeScript", "Vite", "API Search UI", "Responsive Design"],
     highlights: ["Recipe search", "Card layout", "Fallback empty state"],
     live: "https://food-recipe-app-silk-xi.vercel.app/",
     image: "/project-shots/food-recipe-app.png",
@@ -70,19 +70,19 @@ const featuredProjects: Project[] = [
     title: "Shopping Cart",
     description:
       "A product listing and cart flow built around item comparison, stateful cart updates, and a classic commerce browsing pattern.",
-    tools: ["React", "Redux", "Vite", "E-commerce State"],
+    tools: ["React", "TypeScript", "Redux", "Vite", "E-commerce State"],
     highlights: ["Product catalog", "Cart updates", "Retail UI layout"],
     live: "https://shopping-cart-gray-six.vercel.app/",
     image: "/project-shots/shopping-cart.png",
     accent: "sky",
-    layout: "tall",
+    layout: "standard",
     source: "Live deployment",
   },
   {
     title: "All Round Insurance",
     description:
       "A conversion-first insurance website with strong content hierarchy, trust-building sections, and service education across multiple policy types.",
-    tools: ["Next.js", "React", "Marketing Site", "Vercel"],
+    tools: ["Next.js", "React", "TypeScript", "Marketing Site", "Vercel"],
     highlights: ["Service sections", "FAQ flow", "Trust-oriented copy"],
     live: "https://insurance-nu-rust.vercel.app/",
     image: "/project-shots/insurance-web.png",
@@ -94,7 +94,7 @@ const featuredProjects: Project[] = [
     title: "City General Hospital",
     description:
       "A healthcare landing page focused on service clarity, doctor credibility, and patient-facing calls to action for appointments.",
-    tools: ["Next.js", "React", "Healthcare UI", "Vercel"],
+    tools: ["Next.js", "React", "TypeScript", "Healthcare UI", "Vercel"],
     highlights: ["Doctor profiles", "Medical services", "Appointment CTA"],
     live: "https://my-health-app-xi.vercel.app/",
     image: "/project-shots/my-health-app.png",
@@ -106,7 +106,7 @@ const featuredProjects: Project[] = [
     title: "Pizza Motion",
     description:
       "A playful pizza brand interface with a motion-forward visual style, simple navigation, and bold product personality.",
-    tools: ["React", "Vite", "Motion UI", "Brand Landing Page"],
+    tools: ["React", "TypeScript", "Vite", "Motion UI", "Brand Landing Page"],
     highlights: ["Animated entry", "Bold hero", "Fast visual storytelling"],
     live: "https://pizza-motion-zeta.vercel.app/",
     image: "/project-shots/pizza-motion.png",
@@ -118,12 +118,12 @@ const featuredProjects: Project[] = [
     title: "Expense Tracker",
     description:
       "A focused finance dashboard for logging transactions, tracking balance, and visualizing personal income versus expense patterns.",
-    tools: ["React", "Vite", "State Management", "Finance UI"],
+    tools: ["React", "TypeScript", "Vite", "State Management", "Finance UI"],
     highlights: ["Transaction log", "Balance summary", "Income and expense split"],
     live: "https://expense-tracker-app-xi-bice.vercel.app/",
     image: "/project-shots/expense-tracker-app.png",
     accent: "rose",
-    layout: "wide",
+    layout: "standard",
     source: "Live deployment",
   },
 ];
@@ -375,21 +375,6 @@ export default function Home() {
                 >
                   Let&apos;s Work Together
                 </a>
-              </div>
-
-              <div className="metrics-grid" aria-label="Key strengths">
-                <article className="metric-card">
-                  <span>Focus</span>
-                  <strong>Accessible Frontend</strong>
-                </article>
-                <article className="metric-card">
-                  <span>Core Stack</span>
-                  <strong>Next.js, React, TypeScript</strong>
-                </article>
-                <article className="metric-card">
-                  <span>Tooling</span>
-                  <strong>GSAP, Framer Motion, Firebase</strong>
-                </article>
               </div>
             </div>
 
