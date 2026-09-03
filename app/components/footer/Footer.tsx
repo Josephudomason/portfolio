@@ -4,10 +4,8 @@ import {
   FaGithub,
   FaLinkedin,
   FaPhoneAlt,
-  // FaTiktok,
   FaWhatsapp,
 } from "react-icons/fa";
-// import { FaXTwitter } from "react-icons/fa6";
 
 const footerLinks = [
   {
@@ -25,19 +23,9 @@ const footerLinks = [
     href: "https://www.linkedin.com/in/joseph-udomason-0ba1aa319/",
     Icon: FaLinkedin,
   },
-
-  // }, {
-  //   label: "X",
-  //   href: "https://x.com/joecode_007",
-  //   Icon: FaXTwitter,
-  // }, {
-  //   label: "Tiktok",
-  //   href: "https://www.tiktok.com/@webdev_joe?_r=1&_t=ZS-94zwMVEVczk",
-  //   Icon: FaTiktok,
-  // }, 
   {
     label: "What'sApp",
-    href: "https://wa.mw/qr/OZTNHLIFRTCF1/",
+    href: "https://wa.me/2348128274808",
     Icon: FaWhatsapp,
   }, {
     label: "Phone",
@@ -58,7 +46,14 @@ export function Footer() {
 
         <nav aria-label="Footer navigation" className="site-footer__links">
           {footerLinks.map((link) => (
-            <a key={link.label} href={link.href} aria-label={link.label} title={link.label}>
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={link.label}
+              title={link.label}
+            >
               <link.Icon aria-hidden="true" />
               <span className="sr-only">{link.label}</span>
             </a>

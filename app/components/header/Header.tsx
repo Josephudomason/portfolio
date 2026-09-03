@@ -1,11 +1,16 @@
 "use client";
 
 import { useAppContext } from "@/Hook/UseContext";
+import { Menu, X } from "lucide-react";
 import { FaMoon, FaSun } from "react-icons/fa";
+import { useState } from "react";
 
 export function Header() {
   const { theme, isThemeReady, toggleTheme } = useAppContext();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const nextTheme = theme === "dark" ? "light" : "dark";
+
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <header className="site-header">
@@ -14,16 +19,29 @@ export function Header() {
           Joseph Udomason
         </a>
 
+        <button
+          type="button"
+          className="mobile-menu-toggle"
+          onClick={() => setIsMenuOpen((open) => !open)}
+          aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={isMenuOpen}
+          aria-controls="primary-navigation"
+        >
+          {isMenuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+        </button>
 
-
-        <nav aria-label="Primary navigation" className="site-nav">
-          <a className="nav-fade" href="#projects">
+        <nav
+          id="primary-navigation"
+          aria-label="Primary navigation"
+          className={`site-nav${isMenuOpen ? " site-nav--open" : ""}`}
+        >
+          <a className="nav-fade" href="#projects" onClick={closeMenu}>
             Projects
           </a>
-          <a className="nav-fade" href="#toolbox">
+          <a className="nav-fade" href="#toolbox" onClick={closeMenu}>
             Toolbox
           </a>
-          <a className="nav-fade" href="#contact">
+          <a className="nav-fade" href="#contact" onClick={closeMenu}>
             Contact
           </a>
 
